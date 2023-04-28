@@ -194,7 +194,7 @@ export const CreateCats = () => {
     const fetchCats = async () => {
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/admin/getAllCats',
+          'https://imgt-backend.vercel.app/api/admin/getAllCats',
           options
         );
 
@@ -238,7 +238,7 @@ export const CreateCats = () => {
       try {
         // alert(JSON.stringify(values, null, 2));
         const { data } = await axios.post(
-          'http://localhost:5000/api/admin/createCategory',
+          'https://imgt-backend.vercel.app/api/admin/createCategory',
           {
             data: {
               category: values.name,
@@ -284,7 +284,7 @@ export const CreateCats = () => {
         // alert(JSON.stringify(values, null, 2));
         // console.log('Here');
         const { data } = await axios.put(
-          'http://localhost:5000/api/admin/updateCategory',
+          'https://imgt-backend.vercel.app/api/admin/updateCategory',
           {
             data: {
               id: values.id,

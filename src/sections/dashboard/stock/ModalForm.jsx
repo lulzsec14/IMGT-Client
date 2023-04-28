@@ -46,7 +46,7 @@ export const ModalForm = ({ setSnackOpen, setSnackMessage, setSnackColor }) => {
     onSubmit: async (values) => {
       try {
         const { data } = await axios.post(
-          'http://localhost:5000/api/admin/registerAdmin',
+          'https://imgt-backend.vercel.app/api/admin/registerAdmin',
           {
             data: {
               name: values.fullName,

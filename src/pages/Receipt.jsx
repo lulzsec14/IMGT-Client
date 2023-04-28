@@ -55,7 +55,7 @@ export const Receipt = () => {
     const fetchBills = async () => {
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/admin/getPaymentsMade',
+          'https://imgt-backend.vercel.app/api/admin/getPaymentsMade',
           options
         );
         const { mainData } = data.data;

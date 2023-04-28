@@ -60,7 +60,7 @@ export const Bill = () => {
 
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/admin/getPaymentsRecieved',
+          'https://imgt-backend.vercel.app/api/admin/getPaymentsRecieved',
           options
         );
         const { mainData } = data.data;

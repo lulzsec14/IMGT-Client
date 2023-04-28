@@ -230,7 +230,7 @@ export const Stocks = () => {
       // alert(JSON.stringify(values, null, 2));
       try {
         const { data } = await axios.put(
-          'http://localhost:5000/api/admin/sellStock',
+          'https://imgt-backend.vercel.app/api/admin/sellStock',
           {
             data: {
               stockId: values.stockId,
@@ -270,7 +270,7 @@ export const Stocks = () => {
     const fetchStocks = async () => {
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/admin/getAllStocks',
+          'https://imgt-backend.vercel.app/api/admin/getAllStocks',
           options
         );
         // console.log(data.data);

@@ -113,7 +113,7 @@ export const Profile = () => {
 
       try {
         const response = await axios.put(
-          `http://localhost:5000/api/admin/updateAdminDetails`,
+          `https://imgt-backend.vercel.app/api/admin/updateAdminDetails`,
           {
             data: {
               email: values.email,
@@ -156,7 +156,7 @@ export const Profile = () => {
 
       try {
         const response = await axios.put(
-          'http://localhost:5000/api/admin/updateAdminPassword',
+          'https://imgt-backend.vercel.app/api/admin/updateAdminPassword',
           {
             data: {
               email: formik.values.email,
@@ -193,7 +193,7 @@ export const Profile = () => {
       const USER_DETAILS = JSON.parse(Cookies.get('user'));
 
       const response = await axios.get(
-        `http://localhost:5000/api/admin/getEmailVerification?email=${USER_DETAILS.email}`,
+        `https://imgt-backend.vercel.app/api/admin/getEmailVerification?email=${USER_DETAILS.email}`,
         options
       );
 
@@ -241,7 +241,7 @@ export const Profile = () => {
     const fetchUserDetails = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/admin/getAdminDetails/${formik.values.email}`,
+          `https://imgt-backend.vercel.app/api/admin/getAdminDetails/${formik.values.email}`,
           options
         );
 

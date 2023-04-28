@@ -75,7 +75,7 @@ export const CreateStock = () => {
     const fetchCats = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/admin/getAllCats",
+          "https://imgt-backend.vercel.app/api/admin/getAllCats",
           options
         );
 
@@ -134,7 +134,7 @@ export const CreateStock = () => {
       try {
         // alert(JSON.stringify(values, null, 2));
         const { data } = await axios.post(
-          "http://localhost:5000/api/admin/createNewStock",
+          "https://imgt-backend.vercel.app/api/admin/createNewStock",
           {
             data: {
               name: values.name,

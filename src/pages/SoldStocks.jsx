@@ -119,7 +119,7 @@ export const SoldStocks = () => {
     const fetchStocks = async () => {
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/admin/getAllSoldStocks',
+          'https://imgt-backend.vercel.app/api/admin/getAllSoldStocks',
           options
         );
         // console.log(data.data);

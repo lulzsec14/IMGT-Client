@@ -75,7 +75,7 @@ export default function AccountPopover() {
   const handleLogout = async () => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:5000/api/admin/logoutAdmin`,
+        `https://imgt-backend.vercel.app/api/admin/logoutAdmin`,
         options
       );
     } catch (err) {

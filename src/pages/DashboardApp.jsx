@@ -74,7 +74,7 @@ export const DashboardApp = () => {
 
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/admin/getAllStocks`,
+          `https://imgt-backend.vercel.app/api/admin/getAllStocks`,
           options
         );
 
@@ -90,7 +90,7 @@ export const DashboardApp = () => {
     const fetchPurchasedStocks = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/admin/getAllPurchasedStocks`,
+          `https://imgt-backend.vercel.app/api/admin/getAllPurchasedStocks`,
           options
         );
 
@@ -105,7 +105,7 @@ export const DashboardApp = () => {
     const fetchSoldStocks = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/admin/getAllSoldStocks`,
+          `https://imgt-backend.vercel.app/api/admin/getAllSoldStocks`,
           options
         );
 
@@ -120,12 +120,12 @@ export const DashboardApp = () => {
     const fetchProfitMade = async () => {
       try {
         const soldDetails = await axios.get(
-          `http://localhost:5000/api/admin/getAllSoldStocks`,
+          `https://imgt-backend.vercel.app/api/admin/getAllSoldStocks`,
           options
         );
 
         const purchasedDetails = await axios.get(
-          `http://localhost:5000/api/admin/getAllPurchasedStocks`,
+          `https://imgt-backend.vercel.app/api/admin/getAllPurchasedStocks`,
           options
         );
 
@@ -178,7 +178,7 @@ export const DashboardApp = () => {
     const fetchPieData = async () => {
       try {
         const responseData = await axios.get(
-          `http://localhost:5000/api/admin/getStockByCategory`,
+          `https://imgt-backend.vercel.app/api/admin/getStockByCategory`,
           options
         );
 

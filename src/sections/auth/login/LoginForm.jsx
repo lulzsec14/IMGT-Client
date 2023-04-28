@@ -65,7 +65,7 @@ export default function LoginForm({
 
       try {
         const { data } = await axios.post(
-          'http://localhost:5000/api/admin/loginAdmin',
+          'https://imgt-backend.vercel.app/api/admin/loginAdmin',
           {
             data: {
               email: values.email,
